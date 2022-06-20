@@ -116,7 +116,6 @@ function loadData() {
   return JSON.parse(jsonObject);
 }
 data = loadData();
-console.log(data[0]);
 
 letters.forEach((letter) => {
   let span = document.createElement("span");
