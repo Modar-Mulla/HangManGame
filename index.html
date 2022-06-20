@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <div class="bar">
+      <div class="logo">Hangman</div>
+      <div class="word-category">Word Based On: <span>Sports</span></div>
+    </div>
+    <div class="game-container">
+      <div class="man">
+        <div class="empty"></div>
+        <div class="rope-holder n3"></div>
+        <div class="empty"></div>
+        <div class="empty"></div>
+        <div class="base-body n2"></div>
+        <div class="upper-body">
+          <div class="rope n4"></div>
+          <div class="head n5"></div>
+          <div class="body n6"></div>
+          <div class="arms n7"></div>
+        </div>
+        <div class="empty"></div>
+        <div class="base n1"></div>
+        <div class="legs n8"></div>
+      </div>
+      <div class="letters"></div>
+    </div>
+    <div class="guesses"></div>
+    <div class="result-window">
+      <h1></h1>
+      <p></p>
+      <button>Play Again</button>
+    </div>
+    </div>
+
+    <audio
+      src="sounds/mixkit-select-click-1109.wav"
+      id="right"
+      preload="auto"
+    ></audio>
+    <audio
+      src="sounds/mixkit-click-error-1110.wav"
+      id="wrong"
+      preload="auto"
+    ></audio>
+    <audio src="sounds/mixkit-male-voice-cheer-2010.wav" id="win" preload="auto"></audio>
+    <audio src="sounds/mixkit-horror-lose-2028.wav" id="lose" preload="auto"></audio>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

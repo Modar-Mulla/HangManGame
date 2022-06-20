@@ -1,0 +1,102 @@
+{
+      "0": {
+            "name": "food",
+            "values": [
+                  "Milk",
+                  "Bread",
+                  "Butter",
+                  "Cheese",
+                  "Yogurt",
+                  "Sandwich",
+                  "Pancake",
+                  "Pie",
+                  "Honey",
+                  "Waffle",
+                  "Donuts",
+                  "Salad",
+                  "Meatball",
+                  "Grilled chicken",
+                  "Burger",
+                  "Tuna",
+                  "Noodles",
+                  "Egg",
+                  "Bacon",
+                  "Pizza"
+            ]
+      },
+      "1": {
+            "name": "celebrities",
+            "values": [
+                  "Dwayne Johnson",
+                  "Joe Biden",
+                  "Elon Musk",
+                  "Jeff Bezos",
+                  "LeBron James",
+                  "Kylie Jenner",
+                  "Robert Downey Jr.",
+                  "Cristiano Ronaldo",
+                  "Will Smith",
+                  "Justin Beiber",
+                  "Taylor Swift",
+                  "Oprah Winfrey",
+                  "Lionel Messi",
+                  "Tiger Woods",
+                  "Selena Gomez",
+                  "Jennifer Lopez",
+                  "Rihanna",
+                  "Kim Kardashian",
+                  "Ariana Grande",
+                  "Mark Zuckerberg"
+            ]
+      },
+      "2": {
+            "name": "countries",
+            "values": [
+                  "Portugal",
+                  "New Zealand",
+                  "Japan",
+                  "Morocco",
+                  "Sri Lanka",
+                  "Italy",
+                  "Iceland",
+                  "Greece",
+                  "Croatia",
+                  "Turkey",
+                  "Norway",
+                  "Maldives",
+                  "Kenya",
+                  "Ireland",
+                  "Israel",
+                  "Australia",
+                  "Switzerland",
+                  "Indonesia",
+                  "Botswana",
+                  "Philippines"
+            ]
+      },
+      "3": {
+            "name": "animals",
+            "values": [
+                  "Bison",
+                  "Dolphin",
+                  "Eagle",
+                  "Pony",
+                  "Ape",
+                  "Lobster",
+                  "Monkey",
+                  "Cow",
+                  "Deer",
+                  "Duck",
+                  "Rabbit",
+                  "Spider",
+                  "Gray Wolf",
+                  "Turkey",
+                  "Lion",
+                  "Pig",
+                  "Snake",
+                  "Shark",
+                  "Bird",
+                  "Bear"
+            ]
+      }
+}
