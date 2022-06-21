@@ -134,15 +134,16 @@ lettersContainer.addEventListener("click", (e) => {
         if (clickedLetter === letter) {
           wordLength--;
           document.querySelector(
-            `.guesses .letter:nth-child(${i + 1})`
+            `.guesses span:nth-of-type(${i + 1})`
           ).textContent = clickedLetter;
         }
       });
       if (wordLength == 0) {
         victorySound.play();
         resultWindow.classList.add("show-window");
-        document.querySelector(".result-window p").textContent = word.join("");
+        document.querySelector(".result-window p").textContent = wordToShow;
         resultWindow.firstElementChild.textContent = "You Won";
+        lettersContainer.style.cssText = `pointer-events: none;`;
       }
     } else {
       wrongAnswer.play();
@@ -156,7 +157,7 @@ lettersContainer.addEventListener("click", (e) => {
         loseSound.play();
         resultWindow.classList.add("show-window");
         resultWindow.firstElementChild.textContent = "You Lost";
-        document.querySelector(".result-window p").textContent = word.join("");
+        document.querySelector(".result-window p").textContent = wordToShow;
         lettersContainer.style.cssText = `pointer-events: none;`;
       }
     }
@@ -176,7 +177,7 @@ function randomWord() {
   word = Array.from(word);
   word.forEach((e) => {
     if (e == " ") {
-      let inputField = document.createElement("span");
+      let inputField = document.createElement("div");
       inputField.classList.add("space");
       guesses.appendChild(inputField);
     } else {
@@ -186,8 +187,13 @@ function randomWord() {
     }
   });
   wordCategory.textContent = category;
+  word = word.join("");
   return word;
 }
 let clicksNumber = 0;
-const word = randomWord();
+let word = randomWord();
+const wordToShow = word;
+word = word.split(" ");
+word = word.join("");
+word = Array.from(word);
 let wordLength = word.length;
